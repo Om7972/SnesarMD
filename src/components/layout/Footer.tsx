@@ -64,7 +64,7 @@ export default function Footer() {
       title: 'Global Privacy & Data Confidentiality Policy',
       badge: 'ISO 27001 / GDPR COMPLIANT',
       content: [
-        'Snesar.MD operates under strict international data privacy standards. All client engineering specifications, schematics, source code, and telemetry disclosures are encrypted in transit via TLS 1.3 and at rest with AES-256 protocols.',
+        'Snesar.MD operates under strict international data privacy standards. All client engineering specifications, schematics, source code, and telemetry disclosures are protected with enterprise-grade encryption in transit and at rest adhering to global security standards.',
         'We enforce strict zero-data-retention parameters for demonstration testbeds and never sell, lease, or share client project dossiers with third parties.',
         'Direct requests for dossier deletion or audit logs can be dispatched directly to privacy@snesar.md.',
       ],
@@ -281,8 +281,8 @@ export default function Footer() {
               </div>
 
               <div className="p-6 bg-section border-t border-navy/10 flex items-center justify-between">
-                <span className="text-xs font-mono text-navy/40">
-                  REF: DOC-2026-LEGAL-SEC
+                <span className="text-xs font-semibold text-navy/40 uppercase tracking-wider">
+                  Legal &amp; Compliance Policy
                 </span>
                 <button
                   onClick={() => setLegalModal(null)}

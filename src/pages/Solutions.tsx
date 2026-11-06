@@ -355,7 +355,7 @@ export default function Solutions() {
                 {modalTab === 'tech' && (
                   <div>
                     <h4 className="text-xs font-mono font-bold text-navy-400 uppercase tracking-wider mb-3">
-                      Technology Stack & Protocols
+                      Technology Stack &amp; Standards
                     </h4>
                     <div className="flex flex-wrap gap-2 mb-6">
                       {activeSolution.technologies.map((tech) => (
@@ -368,7 +368,7 @@ export default function Solutions() {
                       ))}
                     </div>
                     <p className="text-xs text-navy-400 font-normal">
-                      Integrated and stress-tested with enterprise API protocols, edge controllers, and high-availability cloud frameworks.
+                      Integrated and stress-tested with enterprise API architectures, edge controllers, and high-availability cloud frameworks.
                     </p>
                   </div>
                 )}

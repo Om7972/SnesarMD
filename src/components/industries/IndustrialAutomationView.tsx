@@ -120,9 +120,9 @@ export default function IndustrialAutomationView({ industry }: Props) {
                 </Link>
               </div>
 
-              {/* Protocol Badges */}
+              {/* Field Standard Badges */}
               <div className="mt-10 pt-6 border-t border-white/10 flex flex-wrap items-center gap-2 sm:gap-3 text-xs font-mono text-white/60">
-                <span className="text-cyan font-semibold">PROTOCOLS:</span>
+                <span className="text-cyan font-semibold">FIELD STANDARDS:</span>
                 <span className="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-white/90">OPC-UA TSN</span>
                 <span className="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-white/90">PROFINET</span>
                 <span className="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-white/90">EtherCAT</span>

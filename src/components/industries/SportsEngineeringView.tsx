@@ -123,13 +123,13 @@ export default function SportsEngineeringView({ industry }: Props) {
                 </Link>
               </div>
 
-              {/* Protocol Badges */}
+              {/* Sensor Stack Badges */}
               <div className="mt-10 pt-6 border-t border-white/10 flex flex-wrap items-center gap-2 sm:gap-3 text-xs font-mono text-white/60">
                 <span className="text-cyan font-semibold">SENSOR STACK:</span>
                 <span className="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-white/90">200 Hz 9-DOF IMU</span>
                 <span className="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-white/90">240 FPS Optical Vision</span>
                 <span className="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-white/90">Force Plates 1000 Hz</span>
-                <span className="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-white/90">BLE 5.3 Low-Latency</span>
+                <span className="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-white/90">BLE 5.3 Wireless</span>
               </div>
             </div>
 
@@ -170,7 +170,7 @@ export default function SportsEngineeringView({ industry }: Props) {
                 </div>
 
                 <div className="p-3 rounded-xl bg-white/5 border border-white/5 text-xs text-white/70 flex items-center justify-between font-mono">
-                  <span>MARKERLESS LATENCY</span>
+                  <span>FRAME INFERENCE SPEED</span>
                   <span className="text-cyan font-bold">&lt; 12ms On-Device</span>
                 </div>
               </div>
@@ -374,7 +374,7 @@ export default function SportsEngineeringView({ industry }: Props) {
                   <h4 className="text-base font-bold font-display text-navy mb-2">Tactical Coaching Portal</h4>
                   <p className="text-xs text-navy-500 leading-relaxed">Real-time sideline analytics on iPad and desktop dashboards alerting coaching staff to asymmetric mechanical loads and fatigue thresholds.</p>
                 </div>
-                <div className="mt-4 pt-3 border-t border-navy/5 text-[11px] font-mono text-navy-400">Sub-second Latency</div>
+                <div className="mt-4 pt-3 border-t border-navy/5 text-[11px] font-mono text-navy-400">Real-Time Sideline Stream</div>
               </div>
             </div>
           </div>

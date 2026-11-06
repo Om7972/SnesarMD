@@ -62,7 +62,7 @@ export default function AutomotiveEngineeringView({ industry }: Props) {
       category: 'Autonomous Driving & Active Safety',
       specs: {
         fusionPipeline: '4D Radar + Solid-State LiDAR + 8MP Tri-Cam',
-        perceptionLatency: '24.8ms End-to-End',
+        perceptionResponse: '24.8ms End-to-End',
         detectionRange: 'Up to 300m Forward / 120m Surround',
         computePlatform: 'Dual Heterogeneous SoC (254 TOPS)',
         asilClassification: 'ISO 26262 ASIL-D System Architecture',
@@ -83,16 +83,16 @@ export default function AutomotiveEngineeringView({ industry }: Props) {
         backboneBus: '1000BASE-T1 Automotive Ethernet',
         cellularRadio: '5G Dual SIM Dual Active + C-V2X PC5',
         hsmSecurity: 'Hardware Security Module with EVITA Full',
-        otaProtocol: 'Dual-Bank A/B Fail-Safe Rollback',
-        cloudTelemetry: 'MQTT over TLS 1.3 with Edge Buffering',
-        diagnosticProt: 'UDS on CAN / DoIP (ISO 13400)',
+        otaArchitecture: 'Dual-Bank A/B Fail-Safe Rollback',
+        cloudTelemetry: 'Secure MQTT with Edge Buffering',
+        diagnosticStandard: 'UDS on CAN / DoIP (ISO 13400)',
       },
       image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=900&q=80',
       description: 'High-throughput vehicle central compute gateway bridging internal legacy CAN-FD/LIN networks to gigabit automotive Ethernet backbones and cloud fleet telemetry with zero-downtime OTA flashes.',
       highlights: [
         'AUTOSAR Adaptive platform enabling dynamic service-oriented architecture (SOA)',
         'Cryptographic firmware signature verification with secure boot chain',
-        'Direct Vehicle-to-Everything (V2X) low-latency peer messaging for intersection alerts',
+        'Direct Vehicle-to-Everything (V2X) real-time peer messaging for intersection alerts',
       ],
     },
   };
@@ -223,7 +223,7 @@ export default function AutomotiveEngineeringView({ industry }: Props) {
 
                   <div className="p-3.5 rounded-xl bg-white/5 border border-white/10">
                     <div className="flex items-center justify-between text-xs text-white/60 mb-1">
-                      <span>ADAS Latency</span>
+                      <span>Response Time</span>
                       <Eye className="w-3.5 h-3.5 text-cyan" />
                     </div>
                     <div className="text-xl font-bold font-mono text-white">24.8 ms</div>
@@ -445,7 +445,7 @@ export default function AutomotiveEngineeringView({ industry }: Props) {
                 layer: 'Layer 04',
                 title: 'Connected Cloud Telematics & OTA',
                 desc: 'Secure edge telematics bridging vehicle bus data with cloud digital twins, fleet analytics, and differential A/B over-the-air updates.',
-                tech: 'C-V2X / MQTT / DoIP / TLS 1.3',
+                tech: 'C-V2X / MQTT / DoIP / Secure Transport',
               },
             ].map((stack, idx) => (
               <div
@@ -508,7 +508,7 @@ export default function AutomotiveEngineeringView({ industry }: Props) {
                   High-Voltage Pack Climatic Stress Bench
                 </h4>
                 <p className="text-xs text-navy/70 leading-relaxed font-normal">
-                  Chambers cycling packs from -40°C to +85°C while executing continuous 4C fast-charging protocols to validate thermal stability and cell longevity.
+                  Chambers cycling packs from -40°C to +85°C while executing continuous 4C fast-charging test cycles to validate thermal stability and cell longevity.
                 </p>
               </div>
             </div>

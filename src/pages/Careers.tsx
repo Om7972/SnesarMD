@@ -645,7 +645,7 @@ export default function Careers() {
                       value={formData.email}
                       onChange={(e) => handleChange('email', e.target.value)}
                       onBlur={() => handleBlur('email')}
-                      placeholder="jane.doe@example.com"
+                      placeholder="jane.doe@organization.com"
                       className={`w-full px-4 py-3 bg-section rounded-xl border text-navy text-sm focus:outline-none focus:ring-2 transition-all ${
                         errors.email && touched.email
                           ? 'border-red-500 focus:ring-red-400 bg-red-50/20'

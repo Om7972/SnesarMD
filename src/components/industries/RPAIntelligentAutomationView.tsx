@@ -23,7 +23,7 @@ export default function RPAIntelligentAutomationView({ industry }: Props) {
       name: 'Multi-National Commercial Invoice & 3-Way Match',
       type: 'Financial Operations & ERP Reconciliation',
       throughput: '1,450 invoices/hr',
-      avgLatency: '1.2s per document',
+      avgCycleTime: '1.2s per document',
       confidence: '99.8%',
       erpTarget: 'SAP S/4HANA (BAPI_INCOMINGINVOICE_CREATE)',
       extractedFields: [
@@ -41,12 +41,12 @@ export default function RPAIntelligentAutomationView({ industry }: Props) {
       name: 'Clinical Trial Patient Enrollment & Consent Packets',
       type: 'Healthcare & Regulatory Compliance Automation',
       throughput: '820 packets/hr',
-      avgLatency: '2.4s per packet',
+      avgCycleTime: '2.4s per packet',
       confidence: '99.4%',
       erpTarget: 'Veeva Vault CTMS / FHIR REST API',
       extractedFields: [
         { label: 'De-Identified Subject ID', value: 'SUBJ-CLIN-4089', confidence: '100%' },
-        { label: 'IRB Protocol Code', value: 'ONCO-PHASE3-2026-B', confidence: '99.9%' },
+        { label: 'IRB Study Code', value: 'ONCO-PHASE3-2026-B', confidence: '99.9%' },
         { label: 'Signed Consent Timestamp', value: '2026-10-18T14:32:00Z', confidence: '99.2%' },
         { label: 'Inclusion Criteria Verified', value: 'All 8 Parameters Met', confidence: '99.5%' },
         { label: 'Biomarker Stratification', value: 'HER2+ Amplified (Validated)', confidence: '99.1%' },
@@ -59,7 +59,7 @@ export default function RPAIntelligentAutomationView({ industry }: Props) {
       name: 'Global Ocean Bill of Lading & Customs Declaration',
       type: 'Supply Chain & Multi-Modal Freight Automation',
       throughput: '2,100 bills/hr',
-      avgLatency: '0.9s per document',
+      avgCycleTime: '0.9s per document',
       confidence: '99.1%',
       erpTarget: 'CargoWise One & Customs Port Authority EDI',
       extractedFields: [
@@ -187,7 +187,7 @@ export default function RPAIntelligentAutomationView({ industry }: Props) {
                       <Workflow className="w-3.5 h-3.5 text-cyan" />
                     </div>
                     <div className="text-xl font-bold font-mono text-white">4,820 / hr</div>
-                    <div className="text-[10px] font-mono text-emerald-400">Peak Load 0.4% Latency</div>
+                    <div className="text-[10px] font-mono text-emerald-400">Peak Load Nominal</div>
                   </div>
 
                   <div className="p-3.5 rounded-xl bg-white/5 border border-white/10">
@@ -201,7 +201,7 @@ export default function RPAIntelligentAutomationView({ industry }: Props) {
 
                   <div className="p-3.5 rounded-xl bg-white/5 border border-white/10">
                     <div className="flex items-center justify-between text-xs text-white/60 mb-1">
-                      <span>ERP Connector Latency</span>
+                      <span>ERP Connector Response Time</span>
                       <Database className="w-3.5 h-3.5 text-cyan" />
                     </div>
                     <div className="text-xl font-bold font-mono text-white">48 ms</div>
@@ -312,7 +312,7 @@ export default function RPAIntelligentAutomationView({ industry }: Props) {
                   </h4>
                   <div className="grid grid-cols-2 gap-2 text-xs font-mono bg-black/50 p-2.5 rounded-lg border border-white/10 text-white/80">
                     <div>Throughput: {activeData.throughput}</div>
-                    <div>Extraction: {activeData.avgLatency}</div>
+                    <div>Cycle Time: {activeData.avgCycleTime}</div>
                   </div>
                 </div>
               </div>

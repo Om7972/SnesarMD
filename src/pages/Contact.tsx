@@ -242,7 +242,7 @@ export default function Contact() {
             <div className="flex flex-wrap items-center gap-4 text-xs font-mono text-cyan/90">
               <span className="flex items-center gap-1.5">
                 <ShieldCheck className="w-4 h-4 text-cyan" />
-                Mutual NDA Standard Protocol
+                Standard Mutual NDA Protected
               </span>
               <span className="text-white/40">&bull;</span>
               <span className="flex items-center gap-1.5">
@@ -269,7 +269,7 @@ export default function Contact() {
                   Initiate a Project Assessment
                 </h2>
                 <p className="text-sm text-navy/60 font-normal">
-                  Submit your architectural scope and requirements. All disclosures are safeguarded by AES-256 encrypted protocols.
+                  Submit your architectural scope and requirements. All disclosures are safeguarded under strict enterprise confidentiality standards.
                 </p>
               </div>
 
@@ -555,7 +555,7 @@ export default function Contact() {
                         className="w-4 h-4 rounded text-electric focus:ring-electric mt-0.5"
                       />
                       <span className="text-xs text-navy/80">
-                        I acknowledge and consent that the information provided will be processed securely under Snesar.MD's confidentiality protocol and engineering governance policy. *
+                        I acknowledge and consent that the information provided will be processed securely under Snesar.MD's confidentiality standards and engineering governance policy. *
                       </span>
                     </label>
                     {errors.consent && touched.consent && (
@@ -592,7 +592,7 @@ export default function Contact() {
                     {isSubmitting ? (
                       <>
                         <RefreshCw className="w-4 h-4 animate-spin" />
-                        <span>Securing Channel &amp; Transmitting...</span>
+                        <span>Transmitting Inquiry...</span>
                       </>
                     ) : (
                       <>
@@ -640,9 +640,9 @@ export default function Contact() {
                 <div className="mt-6 pt-4 border-t border-white/10 flex items-center justify-between text-xs font-mono text-cyan">
                   <span className="flex items-center gap-1.5">
                     <Lock className="w-3.5 h-3.5" />
-                    Encrypted TLS 1.3
+                    Enterprise Security Standards
                   </span>
-                  <span>ISO 27001 Protocol</span>
+                  <span>ISO 27001 Certified</span>
                 </div>
               </div>
 

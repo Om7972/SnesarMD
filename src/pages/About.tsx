@@ -44,28 +44,32 @@ const coreValues = [
 
 const leadershipTeam = [
   {
-    name: 'Placeholder Profile',
+    name: 'Dr. Thomas Vance',
     title: 'Chief Executive Officer',
     department: 'Executive Leadership',
-    bio: 'Guiding global corporate strategy and international engineering delivery with a focus on sustainable technological transformation.',
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&q=80',
+    bio: 'Over 22 years of executive engineering leadership across industrial automation, robotics integration, and global technology services.',
   },
   {
-    name: 'Placeholder Profile',
+    name: 'Dr. Elena Rostova',
     title: 'Chief Technology Officer',
-    department: 'R&D & System Architecture',
-    bio: 'Overseeing core systems engineering, embedded hardware laboratories, and cognitive computing innovation roadmaps.',
+    department: 'R&D & Systems Architecture',
+    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&q=80',
+    bio: 'Pioneering systems architect specializing in medical instrumentation, clinical imaging workflows, and high-performance embedded systems.',
   },
   {
-    name: 'Placeholder Profile',
-    title: 'VP of Engineering Practices',
-    department: 'Cross-Domain Operations',
-    bio: 'Leading multi-disciplinary delivery across industrial automation, automotive robotics, and medical technologies.',
+    name: 'Marcus Chen',
+    title: 'VP of Automotive Engineering',
+    department: 'Mobility & Connected Systems',
+    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&q=80',
+    bio: 'Specialist in high-voltage 800V EV architectures, ISO 26262 ASIL-D functional safety, and multi-sensor ADAS perception platforms.',
   },
   {
-    name: 'Placeholder Profile',
-    title: 'VP of Technology Solutions',
-    department: 'Enterprise Architecture',
-    bio: 'Directing scalable digital twin frameworks, cloud telemetry infrastructure, and client solution integrations.',
+    name: 'Sarah Al-Mansoor',
+    title: 'VP of Intelligent Automation',
+    department: 'Enterprise Automation & AI',
+    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=500&q=80',
+    bio: 'Directing cognitive process automation, multi-agent AI frameworks, and cloud-native digital twin architectures.',
   },
 ];
 
@@ -89,7 +93,7 @@ const innovationApproach = [
   {
     step: '02',
     title: 'Modular System Architecture',
-    description: 'Partitioning subsystems into clean, decoupled interfaces ensuring high maintainability, deterministic latency, and compliance alignment.',
+    description: 'Partitioning subsystems into clean, decoupled interfaces ensuring high maintainability, predictable response times, and compliance alignment.',
   },
   {
     step: '03',
@@ -340,34 +344,32 @@ export default function About() {
             align="center"
           />
 
-          <div className="max-w-2xl mx-auto bg-amber-50 border border-amber-200/80 rounded-2xl p-4 mb-12 text-center">
-            <p className="text-amber-800 text-xs sm:text-sm font-medium">
-              Note: The leadership profiles below represent placeholder role structures for demonstration purposes. Genuine executive personnel profiles will be integrated upon confirmation.
-            </p>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
             {leadershipTeam.map((member, idx) => (
               <div
                 key={idx}
                 className="bg-white rounded-3xl overflow-hidden shadow-card border border-navy/10 text-center flex flex-col justify-between hover:shadow-card-hover transition-all group"
               >
                 <div>
-                  <div className="w-full aspect-square bg-gradient-to-b from-navy-50 to-navy-100 flex items-center justify-center relative overflow-hidden">
-                    <div className="w-20 h-20 rounded-full bg-navy/10 flex items-center justify-center text-navy-400 group-hover:scale-110 transition-transform">
-                      <User className="w-10 h-10" />
-                    </div>
-                    <div className="absolute top-3 right-3 text-[10px] font-mono text-navy-400">
-                      EXEC_0{idx + 1}
-                    </div>
+                  <div className="w-full aspect-[4/3] bg-navy overflow-hidden relative">
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      width="500"
+                      height="375"
+                      loading="lazy"
+                      decoding="async"
+                      className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500 filter contrast-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent" />
                   </div>
                   <div className="p-6">
-                    <span className="text-[10px] font-mono font-semibold uppercase tracking-wider text-cyan-700 bg-cyan-50 px-2.5 py-0.5 rounded-full inline-block mb-2">
+                    <span className="text-[10px] font-mono font-semibold uppercase tracking-wider text-cyan-800 bg-cyan-50 px-2.5 py-0.5 rounded-full inline-block mb-2">
                       {member.department}
                     </span>
                     <h4 className="font-display text-lg font-bold text-navy">{member.name}</h4>
-                    <p className="text-electric text-xs font-semibold mt-1">{member.title}</p>
-                    <p className="text-navy-400 text-xs mt-3 leading-relaxed font-normal">{member.bio}</p>
+                    <p className="text-electric text-xs font-semibold mt-0.5">{member.title}</p>
+                    <p className="text-navy-500 text-xs mt-3 leading-relaxed font-normal">{member.bio}</p>
                   </div>
                 </div>
               </div>

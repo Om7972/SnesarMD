@@ -14,7 +14,7 @@ const rdInitiatives = [
   {
     title: 'Autonomous Robotics & Edge Perception',
     category: 'Industrial Systems',
-    description: 'Investigating ultra-low-latency computer vision algorithms executed directly on edge micro-controllers to enable real-time sub-millisecond obstacle evasion and precision alignment in industrial cobots.',
+    description: 'Investigating real-time computer vision algorithms executed directly on edge micro-controllers to enable sub-millisecond obstacle evasion and precision alignment in industrial cobots.',
     status: 'Active Lab Research',
     milestone: 'Phase 3: Silicon Verification',
     progress: 75,
@@ -51,7 +51,7 @@ const labs = [
     focus: 'Kinematics, PLC-to-Cloud gateways, real-time deterministic Ethernet (TSN), cobot safety validation.',
     icon: Workflow,
     tag: 'Hardware & Automation',
-    telemetry: 'TSN Latency: 2.1ms | Multi-Axis Sync',
+    telemetry: 'Deterministic TSN Multi-Axis Synchronization',
   },
   {
     name: 'Healthcare Imaging & Bio-Computing Lab',
@@ -169,7 +169,7 @@ export default function Innovation() {
                     {selectedTech.category} Architecture
                   </span>
                   <span className="text-xs font-mono text-cyan-300">
-                    PROTOCOL: {selectedTech.id.toUpperCase()}_ENG_V3
+                    SPECIFICATION: {selectedTech.name.toUpperCase()}
                   </span>
                 </div>
 
@@ -192,8 +192,8 @@ export default function Innovation() {
                       <div className="text-sm font-semibold text-white mt-1">Multi-Sensor Telemetry</div>
                     </div>
                     <div className="p-3.5 rounded-xl bg-white/5 border border-white/5">
-                      <div className="text-[10px] text-white/50 uppercase font-mono">Cycle Latency</div>
-                      <div className="text-sm font-bold text-cyan mt-1 font-mono">&lt; 15ms Real-Time</div>
+                      <div className="text-[10px] text-white/50 uppercase font-mono">Execution Speed</div>
+                      <div className="text-sm font-bold text-cyan mt-1 font-mono">Sub-15ms Real-Time</div>
                     </div>
                     <div className="p-3.5 rounded-xl bg-white/5 border border-white/5">
                       <div className="text-[10px] text-white/50 uppercase font-mono">Target Deployment</div>

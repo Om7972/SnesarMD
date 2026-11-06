@@ -87,7 +87,7 @@ export const technologies: Technology[] = [
   { id: 'dt', name: 'Digital Twins', category: 'Simulation', description: 'Virtual replicas of physical systems for real-time monitoring and simulation.' },
   { id: 'iiot', name: 'Industrial IoT', category: 'Connectivity', description: 'Connected sensor networks for industrial monitoring, data collection, and control.' },
   { id: 'cloud', name: 'Cloud Computing', category: 'Infrastructure', description: 'Scalable cloud infrastructure for data processing, storage, and application hosting.' },
-  { id: 'edge', name: 'Edge Computing', category: 'Infrastructure', description: 'Distributed computing at the edge for low-latency processing and real-time decision making.' },
+  { id: 'edge', name: 'Edge Computing', category: 'Infrastructure', description: 'Distributed computing at the edge for rapid local processing and real-time decision making.' },
   { id: 'robotics', name: 'Robotics', category: 'Automation', description: 'Robotic systems for industrial automation, precision manufacturing, and autonomous operations.' },
   { id: 'pa', name: 'Predictive Analytics', category: 'Intelligence', description: 'Data-driven forecasting for maintenance, demand, quality, and performance optimization.' },
   { id: 'ia', name: 'Intelligent Automation', category: 'Automation', description: 'AI-powered process automation combining RPA, NLP, and machine learning for smart workflows.' },

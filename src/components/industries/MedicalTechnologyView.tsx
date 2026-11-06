@@ -55,7 +55,7 @@ export default function MedicalTechnologyView({ industry }: Props) {
         HeartRate: '58 BPM (Beta-Blocker Verified)',
         Phase: '75% End-Diastolic Phase',
         ContrastFlow: '5.0 mL/s Iso-Osmolar',
-        RadiationDose: '1.8 mSv Low-Dose Protocol',
+        RadiationDose: '1.8 mSv Low-Dose Profile',
         Anonymization: 'HIPAA Safe Harbor Hash #441',
       },
       image: 'https://images.unsplash.com/photo-1516549655169-df83a0774514?w=900&q=80',
@@ -149,7 +149,7 @@ export default function MedicalTechnologyView({ industry }: Props) {
                 <div className="space-y-3 mb-5">
                   <div className="p-3.5 rounded-2xl bg-white/5 border border-white/5 flex items-center justify-between">
                     <div>
-                      <span className="text-[10px] font-mono text-white/50 block">INTEROPERABILITY PROTOCOL</span>
+                      <span className="text-[10px] font-mono text-white/50 block">HEALTHCARE INTEROPERABILITY</span>
                       <span className="text-base font-bold font-display text-white">HL7 FHIR v4.0.1</span>
                     </div>
                     <Server className="w-6 h-6 text-cyan" />
@@ -157,8 +157,8 @@ export default function MedicalTechnologyView({ industry }: Props) {
 
                   <div className="grid grid-cols-2 gap-3">
                     <div className="p-3 rounded-xl bg-white/5 border border-white/5">
-                      <span className="text-[10px] font-mono text-white/50 block">ENCRYPTION</span>
-                      <span className="text-sm font-bold text-white font-mono">TLS 1.3 / AES-256</span>
+                      <span className="text-[10px] font-mono text-white/50 block">DATA PROTECTION</span>
+                      <span className="text-sm font-bold text-white font-mono">End-to-End Encrypted</span>
                       <span className="text-[10px] text-emerald-400 block mt-0.5">HIPAA Compliant</span>
                     </div>
                     <div className="p-3 rounded-xl bg-white/5 border border-white/5">
@@ -170,8 +170,8 @@ export default function MedicalTechnologyView({ industry }: Props) {
                 </div>
 
                 <div className="p-3 rounded-xl bg-white/5 border border-white/5 text-xs text-white/70 flex items-center justify-between font-mono">
-                  <span>BIO-SIGNAL LATENCY</span>
-                  <span className="text-cyan font-bold">&lt; 8ms Stream Sync</span>
+                  <span>BIO-SIGNAL RESOLUTION</span>
+                  <span className="text-cyan font-bold">Sub-8ms Stream Sync</span>
                 </div>
               </div>
             </div>
@@ -369,7 +369,7 @@ export default function MedicalTechnologyView({ industry }: Props) {
                 <div>
                   <span className="text-xs font-mono font-bold text-cyan-800 uppercase block mb-2">PHASE 03</span>
                   <h4 className="text-base font-bold font-display text-navy mb-2">Clinical Edge Gateway</h4>
-                  <p className="text-xs text-navy-500 leading-relaxed">Local buffering, patient identification verification, and protocol translation into JSON FHIR resources.</p>
+                  <p className="text-xs text-navy-500 leading-relaxed">Local buffering, patient identification verification, and standardized translation into JSON FHIR resources.</p>
                 </div>
                 <div className="mt-4 pt-3 border-t border-navy/5 text-[11px] font-mono text-navy-400">Sub-second Buffering</div>
               </div>

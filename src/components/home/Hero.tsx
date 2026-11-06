@@ -24,7 +24,7 @@ const fadeUp = {
 
 const telemetryStats = [
   { label: 'Core Industry Verticals', value: '5 Global Domains', detail: 'Industrial, Medical, Sports, Auto, RPA' },
-  { label: 'Deterministic Edge Latency', value: '< 15 ms', detail: 'Real-time TSN & CAN-FD sync' },
+  { label: 'Mission-Critical Reliability', value: '99.99%', detail: 'Tested for continuous operations' },
   { label: 'Engineering Architecture', value: 'End-to-End Delivery', detail: 'Hardware, Firmware, Cloud & AI' },
   { label: 'Standards Compliance', value: 'Safety & Industrial', detail: 'ISA-95, HL7 FHIR, ISO 26262' },
 ];
@@ -35,18 +35,18 @@ export default function Hero() {
       {/* Background Cinematic Composite Imagery with Vignette */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1920&q=80&auto=format&fit=crop"
-          alt="Advanced Industrial Robotics &amp; Engineering by Snesar.MD"
+          src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=2000&q=85&auto=format&fit=crop"
+          alt="Advanced Engineering and Technology Solutions by Snesar.MD"
           width="1920"
           height="1080"
           loading="eager"
           decoding="async"
           fetchPriority="high"
-          className="w-full h-full object-cover object-center opacity-20 filter contrast-125 saturate-50"
+          className="w-full h-full object-cover object-center opacity-30 filter contrast-110 brightness-90"
         />
         {/* Dark cinematic vignette overlays */}
-        <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/85 to-navy/70" />
-        <div className="absolute inset-0 bg-radial-at-c from-transparent via-navy/60 to-navy" />
+        <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/80 to-navy/65" />
+        <div className="absolute inset-0 bg-radial-at-c from-transparent via-navy/50 to-navy/80" />
       </div>
 
       {/* Engineering Coordinate Grid Pattern */}
@@ -56,18 +56,6 @@ export default function Hero() {
       {/* Ambient Radial Energy Glows */}
       <div className="absolute top-1/4 right-1/4 w-[600px] h-[600px] rounded-full bg-electric/20 blur-[140px] pointer-events-none z-0" />
       <div className="absolute bottom-1/3 left-10 w-[500px] h-[500px] rounded-full bg-cyan/15 blur-[120px] pointer-events-none z-0" />
-
-      {/* Engineering HUD Coordinate Overlays */}
-      <div className="hidden lg:flex absolute top-32 left-8 z-10 flex-col gap-1 text-[10px] font-mono text-cyan/50 tracking-wider">
-        <span>SYS_STATUS: OPTIMAL</span>
-        <span>NODE: SNESAR_GLOBAL_ENGINEERING</span>
-        <span>LATENCY: 4.8MS</span>
-      </div>
-      <div className="hidden lg:flex absolute top-32 right-8 z-10 flex-col gap-1 text-[10px] font-mono text-white/40 tracking-wider text-right">
-        <span>LOC: MULTI-REGION LABS</span>
-        <span>PROTOCOLS: SECURE TLS 1.3</span>
-        <span>BUILD: v2.6.4_ENTERPRISE</span>
-      </div>
 
       {/* Main Hero Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center my-auto">

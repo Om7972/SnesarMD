@@ -206,8 +206,8 @@ function IndustriesMega({ onClose }: { onClose: () => void }) {
 
         {/* Bottom Bar */}
         <div className="bg-section px-6 py-3 border-t border-navy/5 flex items-center justify-between text-xs">
-          <span className="text-navy-400 font-mono">
-            ARCH-SPEC: HIGH-AVAILABILITY DOMAINS
+          <span className="text-navy-400 font-medium">
+            Core Engineering Practices &amp; Domain Expertise
           </span>
           <Link
             to="/industries"
