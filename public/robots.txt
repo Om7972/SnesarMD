@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Host
+Host: https://snesarmd.com
+
+# Sitemaps
+Sitemap: https://snesarmd.com/sitemap.xml
+

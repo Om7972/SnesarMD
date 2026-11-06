@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#071B33"/>
+      <stop offset="50%" stop-color="#0B2342"/>
+      <stop offset="100%" stop-color="#071B33"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="600" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1264E8" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#16C6D9" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="100%" y2="0%" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1264E8"/>
+      <stop offset="50%" stop-color="#16C6D9"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1050" cy="150" r="350" fill="url(#glow)"/>
+  <circle cx="150" cy="500" r="280" fill="url(#glow)"/>
+
+  <!-- Subtle Grid Lines -->
+  <g opacity="0.12" stroke="#FFFFFF" stroke-width="1">
+    <line x1="80" y1="0" x2="80" y2="630"/>
+    <line x1="280" y1="0" x2="280" y2="630"/>
+    <line x1="480" y1="0" x2="480" y2="630"/>
+    <line x1="680" y1="0" x2="680" y2="630"/>
+    <line x1="880" y1="0" x2="880" y2="630"/>
+    <line x1="1080" y1="0" x2="1080" y2="630"/>
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="260" x2="1200" y2="260"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="540" x2="1200" y2="540"/>
+  </g>
+
+  <!-- Brand Mark -->
+  <g transform="translate(100, 100)">
+    <rect width="72" height="72" rx="18" fill="#1264E8" fill-opacity="0.2" stroke="#16C6D9" stroke-width="2"/>
+    <path d="M22 28 C22 23 28 20 36 20 H42 C48 20 52 24 52 30 C52 36 46 38 38 38 H34 C26 38 22 42 22 48 C22 54 28 56 36 56 H46 C52 56 56 52 56 46" stroke="#16C6D9" stroke-width="4.5" stroke-linecap="round"/>
+    <circle cx="52" cy="30" r="3.5" fill="#16C6D9"/>
+    <circle cx="22" cy="48" r="3.5" fill="#1264E8"/>
+  </g>
+
+  <!-- Pill Tag -->
+  <g transform="translate(195, 120)">
+    <rect width="360" height="34" rx="17" fill="#FFFFFF" fill-opacity="0.08" stroke="#16C6D9" stroke-opacity="0.4"/>
+    <circle cx="18" cy="17" r="4" fill="#16C6D9"/>
+    <text x="32" y="22" fill="#16C6D9" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" letter-spacing="2">GLOBAL ENGINEERING &amp; TECHNOLOGY</text>
+  </g>
+
+  <!-- Brand Title -->
+  <text x="100" y="275" fill="#FFFFFF" font-family="'Syne', 'Inter', sans-serif" font-size="78" font-weight="800" letter-spacing="-1">Snesar<tspan fill="#1264E8">.MD</tspan></text>
+
+  <!-- Tagline -->
+  <text x="100" y="340" fill="url(#accent)" font-family="'Syne', 'Inter', sans-serif" font-size="36" font-weight="700">Engineering Tomorrow. Transforming Industries Today.</text>
+
+  <!-- Description -->
+  <text x="100" y="405" fill="#FFFFFF" fill-opacity="0.75" font-family="'Inter', sans-serif" font-size="20" font-weight="400">
+    <tspan x="100" dy="0">Industrial Automation &middot; Medical Technology &middot; Sports Engineering</tspan>
+    <tspan x="100" dy="32">Automotive Engineering &middot; RPA &amp; Intelligent Automation</tspan>
+  </text>
+
+  <!-- Domain Footer Badge -->
+  <g transform="translate(100, 500)">
+    <rect width="1000" height="56" rx="14" fill="#FFFFFF" fill-opacity="0.05" stroke="#FFFFFF" stroke-opacity="0.1"/>
+    <text x="24" y="34" fill="#16C6D9" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="600">https://snesarmd.com</text>
+    <text x="760" y="34" fill="#FFFFFF" fill-opacity="0.6" font-family="'JetBrains Mono', monospace" font-size="13">ISO 26262 &middot; ISA-95 &middot; IEC 62304</text>
+  </g>
+</svg>
+
